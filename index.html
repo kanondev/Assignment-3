@@ -26,6 +26,16 @@
             }
           }
         }
+        module.exports = {
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    }
+  }
+}
      </script>
      <style>
       .font{
@@ -97,7 +107,7 @@
           <h1 class="font-extrabold text-6xl mb-5">A barn house of this design has a striking appearance</h1>
           <p class="font-medium text-gray-500 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
           <div >
-            <a class="btn rounded-full bg-[#D4F6AE]">Book Consult
+            <a class="btn rounded-full bg-[#D4F6AE]">View Details
               <i class="fa-solid fa-arrow-right-long bg-black rounded-full text-white p-2 -rotate-45"></i>
             </a>
           </div>
@@ -108,9 +118,8 @@
         <section class=" bg-[#F4F4F4] mt-20 p-16">
           <img src="./assets/Vector.png" alt="">
 
-
+          
           <div class="lg:flex gap-10 ">
-            <!-- about contant -->
             <div>
               <div class="mb-5">
                 <a class="btn rounded-full"> <i class="fa-solid fa-arrow-right-long"></i>About Us</a>
@@ -125,7 +134,7 @@
                     <h3 class="font-extrabold text-xl">Commercial</h3>
                     <p class="text-gray-500">The barn house captivates with its blend <br>of rustic charm and modern.</p>
                   </div>
-                 </div>
+                </div>
   
                  <!--card 2 -->
                  <div class="flex items-center shadow-xl p-4 gap-4">
@@ -135,8 +144,7 @@
                     <p class="text-gray-500">The barn house captivates with its blend <br>of rustic charm and modern.</p>
                   </div>
                  </div>
-                 
-            </div>
+              </div>
   
             <!-- Image contant -->
             <div>
@@ -235,6 +243,43 @@
 
 
            </div>
+         </section>
+
+
+         <!-- Let's Discuss Next section here -->
+
+         <section class="lg:px-64 py-24">
+          <div class="bg-[url('/img/hero-pattern.svg')]">
+            <!-- ... -->
+          </div>
+          <div class="text-center mb-8">
+            <div class="mb-5">
+              <a class="btn rounded-full bg-[#EEFCDF]"> <i class="fa-solid fa-arrow-right-long"></i>Let’s Connect</a>
+            </div>
+            <h1 class="font-bold text-5xl mb-6">Let’s Discuss Next Project</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+          </div>
+
+        <!-- text fill airea -->
+
+          <div class=" lg:grid grid-cols-2 gap-5 lg:max-w-5xl">
+            <input type="text" placeholder="First Name*" class="input input-bordered w-full bg-white rounded-full mb-4" />
+            <input type="text" placeholder="Last Name*" class="input input-bordered w-full bg-white rounded-full mb-4" />
+            <input type="text" placeholder="Phone Number*" class="input input-bordered w-full bg-white rounded-full mb-4" />
+            <input type="email" placeholder="Email Number*" class="input input-bordered w-full bg-white rounded-full mb-4" />
+          </div>
+          <textarea
+                  placeholder="Bio"
+                  class="textarea textarea-bordered textarea-lg w-full mt-6"></textarea>
+
+                  <div class="mt-8" >
+                    <a class="btn rounded-full w-full bg-[#ABEF5F]">View Details
+                      <i class="fa-solid fa-arrow-right-long bg-black rounded-full text-white p-2 -rotate-45"></i>
+                    </a>
+                  </div>
+                
+
+
          </section>
 
       </main>
