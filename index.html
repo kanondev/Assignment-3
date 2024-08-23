@@ -19,27 +19,22 @@
     <script>
         tailwind.config = {
           theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-        module.exports = {
-  theme: {
-    extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+          extend: {
+          backgroundImage: {
+          'hero-pattern': "url('/img/hero-pattern.svg')",
+          'footer-texture': "url('as')",
       }
     }
   }
 }
+        }
      </script>
      <style>
       .font{
         font-family: "Manrope", sans-serif;
+      }
+      .bg-img{
+        background-image: url(./assets/bg.jpg);
       }
      </style>
 </head>
@@ -248,8 +243,8 @@
 
          <!-- Let's Discuss Next section here -->
 
-         <section class="lg:px-64 py-24">
-          <div class="bg-[url('/img/hero-pattern.svg')]">
+         <section class="bg-img lg:px-64 py-24 mb-4">
+          <div class="">
             <!-- ... -->
           </div>
           <div class="text-center mb-8">
@@ -285,7 +280,9 @@
       </main>
 
       <!-- footere section here -->
-       <footer></footer>
+       <footer>
+
+       </footer>
     
 </body>
 </html>
